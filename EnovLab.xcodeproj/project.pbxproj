@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD840C931FCF716D005CFCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C921FCF716D005CFCCE /* AppDelegate.swift */; };
+		BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C941FCF716D005CFCCE /* UserListViewController.swift */; };
+		BD840C981FCF716D005CFCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD840C961FCF716D005CFCCE /* Main.storyboard */; };
+		BD840C9A1FCF716D005CFCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD840C991FCF716D005CFCCE /* Assets.xcassets */; };
+		BD840C9D1FCF716D005CFCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */; };
+		BD840CC11FCF76CA005CFCCE /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = BD840CC01FCF76CA005CFCCE /* users.json */; };
+		BD840CC91FCF7826005CFCCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CC81FCF7826005CFCCE /* User.swift */; };
+		BD840CD61FCF793B005CFCCE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD51FCF793B005CFCCE /* UserViewController.swift */; };
+		BD840CD81FCF7951005CFCCE /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD71FCF7951005CFCCE /* UserRouter.swift */; };
+		BD840CDA1FCF7986005CFCCE /* UserInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD91FCF7986005CFCCE /* UserInteracter.swift */; };
+		BD840CDC1FCF7991005CFCCE /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */; };
+		BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */; };
+		BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */; };
+		BD840CE21FCF79CA005CFCCE /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE11FCF79CA005CFCCE /* UserListRouter.swift */; };
+		BD840CE41FCF79D8005CFCCE /* UserListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */; };
+		BD840CE61FCF79E5005CFCCE /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */; };
+		BD840CE91FCF7A1B005CFCCE /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */; };
+		BD840CEB1FCF7A25005CFCCE /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD840CA41FCF716D005CFCCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD840C871FCF716D005CFCCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD840C8E1FCF716D005CFCCE;
+			remoteInfo = EnovLab;
+		};
+		BD840CAF1FCF716E005CFCCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD840C871FCF716D005CFCCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD840C8E1FCF716D005CFCCE;
+			remoteInfo = EnovLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD840C8F1FCF716D005CFCCE /* EnovLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnovLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD840C921FCF716D005CFCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD840C941FCF716D005CFCCE /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		BD840C971FCF716D005CFCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD840C991FCF716D005CFCCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD840C9C1FCF716D005CFCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD840C9E1FCF716D005CFCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD840CA31FCF716D005CFCCE /* EnovLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnovLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD840CAE1FCF716E005CFCCE /* EnovLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnovLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD840CC01FCF76CA005CFCCE /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		BD840CC81FCF7826005CFCCE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD840CD51FCF793B005CFCCE /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		BD840CD71FCF7951005CFCCE /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		BD840CD91FCF7986005CFCCE /* UserInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteracter.swift; sourceTree = "<group>"; };
+		BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteracter.swift; sourceTree = "<group>"; };
+		BD840CE11FCF79CA005CFCCE /* UserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
+		BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProtocols.swift; sourceTree = "<group>"; };
+		BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
+		BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
+		BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD840C8C1FCF716D005CFCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840CA01FCF716D005CFCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840CAB1FCF716E005CFCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD840C861FCF716D005CFCCE = {
+			isa = PBXGroup;
+			children = (
+				BD840C911FCF716D005CFCCE /* EnovLab */,
+				BD840C901FCF716D005CFCCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD840C901FCF716D005CFCCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD840C8F1FCF716D005CFCCE /* EnovLab.app */,
+				BD840CA31FCF716D005CFCCE /* EnovLabTests.xctest */,
+				BD840CAE1FCF716E005CFCCE /* EnovLabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD840C911FCF716D005CFCCE /* EnovLab */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CC31FCF7748005CFCCE /* Application */,
+				BD840CC71FCF77EF005CFCCE /* Models */,
+				BD840CC21FCF7717005CFCCE /* Resources */,
+				BD840CC61FCF7799005CFCCE /* Modules */,
+				BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */,
+			);
+			path = EnovLab;
+			sourceTree = "<group>";
+		};
+		BD840CC21FCF7717005CFCCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD840C9E1FCF716D005CFCCE /* Info.plist */,
+				BD840C991FCF716D005CFCCE /* Assets.xcassets */,
+				BD840CC01FCF76CA005CFCCE /* users.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD840CC31FCF7748005CFCCE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BD840C921FCF716D005CFCCE /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BD840CC41FCF7754005CFCCE /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CD31FCF78E5005CFCCE /* Protocols */,
+				BD840CCE1FCF7885005CFCCE /* View */,
+				BD840CD11FCF789A005CFCCE /* Interactor */,
+				BD840CD01FCF7894005CFCCE /* Presenter */,
+				BD840CCF1FCF788B005CFCCE /* Router */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		BD840CC51FCF776E005CFCCE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CD41FCF78F4005CFCCE /* Protocols */,
+				BD840CCD1FCF7877005CFCCE /* View */,
+				BD840CCC1FCF786E005CFCCE /* Router */,
+				BD840CCB1FCF7867005CFCCE /* Interactor */,
+				BD840CCA1FCF7860005CFCCE /* Presenter */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		BD840CC61FCF7799005CFCCE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CE71FCF7A09005CFCCE /* Root */,
+				BD840CC41FCF7754005CFCCE /* UserList */,
+				BD840CC51FCF776E005CFCCE /* User */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BD840CC71FCF77EF005CFCCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CC81FCF7826005CFCCE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD840CCA1FCF7860005CFCCE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD840CCB1FCF7867005CFCCE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CD91FCF7986005CFCCE /* UserInteracter.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD840CCC1FCF786E005CFCCE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CD71FCF7951005CFCCE /* UserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD840CCD1FCF7877005CFCCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CD51FCF793B005CFCCE /* UserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD840CCE1FCF7885005CFCCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD840C961FCF716D005CFCCE /* Main.storyboard */,
+				BD840C941FCF716D005CFCCE /* UserListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD840CCF1FCF788B005CFCCE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CE11FCF79CA005CFCCE /* UserListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD840CD01FCF7894005CFCCE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD840CD11FCF789A005CFCCE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD840CD31FCF78E5005CFCCE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BD840CD41FCF78F4005CFCCE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BD840CE71FCF7A09005CFCCE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */,
+				BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD840C8E1FCF716D005CFCCE /* EnovLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD840CB71FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLab" */;
+			buildPhases = (
+				BD840C8B1FCF716D005CFCCE /* Sources */,
+				BD840C8C1FCF716D005CFCCE /* Frameworks */,
+				BD840C8D1FCF716D005CFCCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnovLab;
+			productName = EnovLab;
+			productReference = BD840C8F1FCF716D005CFCCE /* EnovLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD840CA21FCF716D005CFCCE /* EnovLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD840CBA1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabTests" */;
+			buildPhases = (
+				BD840C9F1FCF716D005CFCCE /* Sources */,
+				BD840CA01FCF716D005CFCCE /* Frameworks */,
+				BD840CA11FCF716D005CFCCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD840CA51FCF716D005CFCCE /* PBXTargetDependency */,
+			);
+			name = EnovLabTests;
+			productName = EnovLabTests;
+			productReference = BD840CA31FCF716D005CFCCE /* EnovLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD840CAD1FCF716E005CFCCE /* EnovLabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD840CBD1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabUITests" */;
+			buildPhases = (
+				BD840CAA1FCF716E005CFCCE /* Sources */,
+				BD840CAB1FCF716E005CFCCE /* Frameworks */,
+				BD840CAC1FCF716E005CFCCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD840CB01FCF716E005CFCCE /* PBXTargetDependency */,
+			);
+			name = EnovLabUITests;
+			productName = EnovLabUITests;
+			productReference = BD840CAE1FCF716E005CFCCE /* EnovLabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD840C871FCF716D005CFCCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = CharlesGraffeo;
+				TargetAttributes = {
+					BD840C8E1FCF716D005CFCCE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BD840CA21FCF716D005CFCCE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD840C8E1FCF716D005CFCCE;
+					};
+					BD840CAD1FCF716E005CFCCE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD840C8E1FCF716D005CFCCE;
+					};
+				};
+			};
+			buildConfigurationList = BD840C8A1FCF716D005CFCCE /* Build configuration list for PBXProject "EnovLab" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD840C861FCF716D005CFCCE;
+			productRefGroup = BD840C901FCF716D005CFCCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD840C8E1FCF716D005CFCCE /* EnovLab */,
+				BD840CA21FCF716D005CFCCE /* EnovLabTests */,
+				BD840CAD1FCF716E005CFCCE /* EnovLabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD840C8D1FCF716D005CFCCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD840CC11FCF76CA005CFCCE /* users.json in Resources */,
+				BD840C9D1FCF716D005CFCCE /* LaunchScreen.storyboard in Resources */,
+				BD840C9A1FCF716D005CFCCE /* Assets.xcassets in Resources */,
+				BD840C981FCF716D005CFCCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840CA11FCF716D005CFCCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840CAC1FCF716E005CFCCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD840C8B1FCF716D005CFCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD840CE91FCF7A1B005CFCCE /* RootProtocols.swift in Sources */,
+				BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */,
+				BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */,
+				BD840CD61FCF793B005CFCCE /* UserViewController.swift in Sources */,
+				BD840CEB1FCF7A25005CFCCE /* RootRouter.swift in Sources */,
+				BD840C931FCF716D005CFCCE /* AppDelegate.swift in Sources */,
+				BD840CDC1FCF7991005CFCCE /* UserPresenter.swift in Sources */,
+				BD840CC91FCF7826005CFCCE /* User.swift in Sources */,
+				BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */,
+				BD840CD81FCF7951005CFCCE /* UserRouter.swift in Sources */,
+				BD840CDA1FCF7986005CFCCE /* UserInteracter.swift in Sources */,
+				BD840CE41FCF79D8005CFCCE /* UserListProtocols.swift in Sources */,
+				BD840CE61FCF79E5005CFCCE /* UserProtocols.swift in Sources */,
+				BD840CE21FCF79CA005CFCCE /* UserListRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840C9F1FCF716D005CFCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD840CAA1FCF716E005CFCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD840CA51FCF716D005CFCCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD840C8E1FCF716D005CFCCE /* EnovLab */;
+			targetProxy = BD840CA41FCF716D005CFCCE /* PBXContainerItemProxy */;
+		};
+		BD840CB01FCF716E005CFCCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD840C8E1FCF716D005CFCCE /* EnovLab */;
+			targetProxy = BD840CAF1FCF716E005CFCCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD840C961FCF716D005CFCCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD840C971FCF716D005CFCCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD840C9C1FCF716D005CFCCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD840CB51FCF716E005CFCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD840CB61FCF716E005CFCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD840CB81FCF716E005CFCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLab/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD840CB91FCF716E005CFCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLab/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD840CBB1FCF716E005CFCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnovLab.app/EnovLab";
+			};
+			name = Debug;
+		};
+		BD840CBC1FCF716E005CFCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnovLab.app/EnovLab";
+			};
+			name = Release;
+		};
+		BD840CBE1FCF716E005CFCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnovLab;
+			};
+			name = Debug;
+		};
+		BD840CBF1FCF716E005CFCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT2443B4WD;
+				INFOPLIST_FILE = EnovLabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnovLab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD840C8A1FCF716D005CFCCE /* Build configuration list for PBXProject "EnovLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD840CB51FCF716E005CFCCE /* Debug */,
+				BD840CB61FCF716E005CFCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD840CB71FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD840CB81FCF716E005CFCCE /* Debug */,
+				BD840CB91FCF716E005CFCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD840CBA1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD840CBB1FCF716E005CFCCE /* Debug */,
+				BD840CBC1FCF716E005CFCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD840CBD1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD840CBE1FCF716E005CFCCE /* Debug */,
+				BD840CBF1FCF716E005CFCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD840C871FCF716D005CFCCE /* Project object */;
+}
