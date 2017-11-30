@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD840C931FCF716D005CFCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C921FCF716D005CFCCE /* AppDelegate.swift */; };
 		BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C941FCF716D005CFCCE /* UserListViewController.swift */; };
-		BD840C981FCF716D005CFCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD840C961FCF716D005CFCCE /* Main.storyboard */; };
 		BD840C9A1FCF716D005CFCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD840C991FCF716D005CFCCE /* Assets.xcassets */; };
 		BD840C9D1FCF716D005CFCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */; };
 		BD840CC11FCF76CA005CFCCE /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = BD840CC01FCF76CA005CFCCE /* users.json */; };
@@ -21,9 +20,9 @@
 		BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */; };
 		BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */; };
 		BD840CE21FCF79CA005CFCCE /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE11FCF79CA005CFCCE /* UserListRouter.swift */; };
-		BD840CE41FCF79D8005CFCCE /* UserListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */; };
-		BD840CE61FCF79E5005CFCCE /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */; };
-		BD840CE91FCF7A1B005CFCCE /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */; };
+		BD840CE41FCF79D8005CFCCE /* UserListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE31FCF79D8005CFCCE /* UserListContract.swift */; };
+		BD840CE61FCF79E5005CFCCE /* UserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE51FCF79E5005CFCCE /* UserContract.swift */; };
+		BD840CE91FCF7A1B005CFCCE /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE81FCF7A1B005CFCCE /* RootContract.swift */; };
 		BD840CEB1FCF7A25005CFCCE /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		BD840C8F1FCF716D005CFCCE /* EnovLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnovLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD840C921FCF716D005CFCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD840C941FCF716D005CFCCE /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		BD840C971FCF716D005CFCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD840C991FCF716D005CFCCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD840C9C1FCF716D005CFCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD840C9E1FCF716D005CFCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +61,9 @@
 		BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
 		BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteracter.swift; sourceTree = "<group>"; };
 		BD840CE11FCF79CA005CFCCE /* UserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
-		BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProtocols.swift; sourceTree = "<group>"; };
-		BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
-		BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
+		BD840CE31FCF79D8005CFCCE /* UserListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListContract.swift; sourceTree = "<group>"; };
+		BD840CE51FCF79E5005CFCCE /* UserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContract.swift; sourceTree = "<group>"; };
+		BD840CE81FCF7A1B005CFCCE /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +143,7 @@
 		BD840CC41FCF7754005CFCCE /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CD31FCF78E5005CFCCE /* Protocols */,
+				BD840CD31FCF78E5005CFCCE /* Contract */,
 				BD840CCE1FCF7885005CFCCE /* View */,
 				BD840CD11FCF789A005CFCCE /* Interactor */,
 				BD840CD01FCF7894005CFCCE /* Presenter */,
@@ -157,7 +155,7 @@
 		BD840CC51FCF776E005CFCCE /* User */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CD41FCF78F4005CFCCE /* Protocols */,
+				BD840CD41FCF78F4005CFCCE /* Contract */,
 				BD840CCD1FCF7877005CFCCE /* View */,
 				BD840CCC1FCF786E005CFCCE /* Router */,
 				BD840CCB1FCF7867005CFCCE /* Interactor */,
@@ -219,7 +217,6 @@
 		BD840CCE1FCF7885005CFCCE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD840C961FCF716D005CFCCE /* Main.storyboard */,
 				BD840C941FCF716D005CFCCE /* UserListViewController.swift */,
 			);
 			path = View;
@@ -236,7 +233,7 @@
 		BD840CD01FCF7894005CFCCE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */,
+				BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -244,31 +241,31 @@
 		BD840CD11FCF789A005CFCCE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */,
+				BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		BD840CD31FCF78E5005CFCCE /* Protocols */ = {
+		BD840CD31FCF78E5005CFCCE /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CE31FCF79D8005CFCCE /* UserListProtocols.swift */,
+				BD840CE31FCF79D8005CFCCE /* UserListContract.swift */,
 			);
-			path = Protocols;
+			path = Contract;
 			sourceTree = "<group>";
 		};
-		BD840CD41FCF78F4005CFCCE /* Protocols */ = {
+		BD840CD41FCF78F4005CFCCE /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CE51FCF79E5005CFCCE /* UserProtocols.swift */,
+				BD840CE51FCF79E5005CFCCE /* UserContract.swift */,
 			);
-			path = Protocols;
+			path = Contract;
 			sourceTree = "<group>";
 		};
 		BD840CE71FCF7A09005CFCCE /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				BD840CE81FCF7A1B005CFCCE /* RootProtocols.swift */,
+				BD840CE81FCF7A1B005CFCCE /* RootContract.swift */,
 				BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */,
 			);
 			path = Root;
@@ -384,7 +381,6 @@
 				BD840CC11FCF76CA005CFCCE /* users.json in Resources */,
 				BD840C9D1FCF716D005CFCCE /* LaunchScreen.storyboard in Resources */,
 				BD840C9A1FCF716D005CFCCE /* Assets.xcassets in Resources */,
-				BD840C981FCF716D005CFCCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD840CE91FCF7A1B005CFCCE /* RootProtocols.swift in Sources */,
+				BD840CE91FCF7A1B005CFCCE /* RootContract.swift in Sources */,
 				BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */,
 				BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */,
 				BD840CD61FCF793B005CFCCE /* UserViewController.swift in Sources */,
@@ -420,8 +416,8 @@
 				BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */,
 				BD840CD81FCF7951005CFCCE /* UserRouter.swift in Sources */,
 				BD840CDA1FCF7986005CFCCE /* UserInteracter.swift in Sources */,
-				BD840CE41FCF79D8005CFCCE /* UserListProtocols.swift in Sources */,
-				BD840CE61FCF79E5005CFCCE /* UserProtocols.swift in Sources */,
+				BD840CE41FCF79D8005CFCCE /* UserListContract.swift in Sources */,
+				BD840CE61FCF79E5005CFCCE /* UserContract.swift in Sources */,
 				BD840CE21FCF79CA005CFCCE /* UserListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,14 +452,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD840C961FCF716D005CFCCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD840C971FCF716D005CFCCE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,7 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -608,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlesGraffeo.EnovLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

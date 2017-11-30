@@ -8,6 +8,12 @@
 
 import UIKit
 
-class RootRouter: NSObject {
-
+class RootRouter: RootWireframe {
+    
+    func presentUserListScreen(in window: UIWindow) {
+        
+        window.makeKeyAndVisible()
+        window.rootViewController = UserListRouter.assembleModule()
+        
+    }
 }

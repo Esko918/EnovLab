@@ -8,6 +8,12 @@
 
 import UIKit
 
-class UserListInteracter: NSObject {
+class UserListInteracter: UsersListCase {
+    var output: UserListInteracterOutput!
+    
+    func fetchUsers() {
+        
+    }
+    
 
 }

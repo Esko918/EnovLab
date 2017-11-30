@@ -8,6 +8,8 @@
 
 import UIKit
 
-class RootProtocols: NSObject {
-
+protocol RootWireframe: class {
+    
+    func presentUserListScreen(in window: UIWindow)
+    
 }
