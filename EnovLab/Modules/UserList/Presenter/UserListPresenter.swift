@@ -23,9 +23,7 @@ class UserListPresenter: UserListPresentation {
     
     // MARK: Public Methods
     func viewDidLoad() {
-        //interacter.fetchUsers()
-        
-        view?.displayDataNotFound()
+        interacter.fetchUsers()
     }
     
     func userSelected(atIndex index: Int) {

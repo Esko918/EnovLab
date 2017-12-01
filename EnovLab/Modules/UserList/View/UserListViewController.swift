@@ -16,22 +16,60 @@ class UserListViewController: UIViewController {
     var tableview:UITableView!
     
     // MARK: Override Methods
-    override func viewDidLoad() {
+    override func loadView() {
         
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.green
+        self.title = "User List"
+        
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.black
         
         tableview = UITableView(frame: .zero)
         tableview.translatesAutoresizingMaskIntoConstraints = false
         tableview.delegate = self
         tableview.dataSource = self
-        self.view.addSubview(tableview)
+        view.addSubview(tableview)
+        self.view = view
+    
+    }
+    
+    override func viewDidLoad() {
         
+        super.viewDidLoad()
         self.presenter.viewDidLoad()
         
     }
     
     override func updateViewConstraints() {
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.tableview,
+                                                   attribute: .leading,
+                                                   relatedBy: .equal,
+                                                   toItem: self.view,
+                                                   attribute: .leading,
+                                                   multiplier: 1.0,
+                                                   constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.tableview,
+                                                   attribute: .top,
+                                                   relatedBy: .equal,
+                                                   toItem: self.view,
+                                                   attribute: .top,
+                                                   multiplier: 1.0,
+                                                   constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.tableview,
+                                                   attribute: .trailing,
+                                                   relatedBy: .equal,
+                                                   toItem: self.view,
+                                                   attribute: .trailing,
+                                                   multiplier: 1.0,
+                                                   constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.tableview,
+                                                   attribute: .bottom,
+                                                   relatedBy: .equal,
+                                                   toItem: self.view,
+                                                   attribute: .bottom,
+                                                   multiplier: 1.0,
+                                                   constant: 0))
         
         super.updateViewConstraints()
     }
@@ -71,12 +109,15 @@ extension UserListViewController:UserListView{
 
 extension UserListViewController:UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.userSelected(atIndex: indexPath.row)
+    }
+    
 }
-
 
 extension UserListViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
