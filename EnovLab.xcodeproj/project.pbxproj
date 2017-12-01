@@ -113,9 +113,9 @@
 		BD840C911FCF716D005CFCCE /* EnovLab */ = {
 			isa = PBXGroup;
 			children = (
+				BD840CC21FCF7717005CFCCE /* Resources */,
 				BD840CC31FCF7748005CFCCE /* Application */,
 				BD840CC71FCF77EF005CFCCE /* Models */,
-				BD840CC21FCF7717005CFCCE /* Resources */,
 				BD840CC61FCF7799005CFCCE /* Modules */,
 				BD840C9B1FCF716D005CFCCE /* LaunchScreen.storyboard */,
 			);
@@ -145,8 +145,8 @@
 			children = (
 				BD840CD31FCF78E5005CFCCE /* Contract */,
 				BD840CCE1FCF7885005CFCCE /* View */,
-				BD840CD11FCF789A005CFCCE /* Interactor */,
 				BD840CD01FCF7894005CFCCE /* Presenter */,
+				BD840CD11FCF789A005CFCCE /* Interactor */,
 				BD840CCF1FCF788B005CFCCE /* Router */,
 			);
 			path = UserList;

@@ -11,6 +11,8 @@ import UIKit
 protocol UserListView: class {
     
     var presenter: UserListPresentation! { get set }
+    func presentUserListData(users:[User])
+    func displayDataNotFound()
     
 }
 
@@ -32,6 +34,7 @@ protocol UsersListCase: class {
 
 protocol UserListInteracterOutput: class {
     func usersFetched(_ users:[User])
+    func failedUserFetch()
 }
 
 protocol UserListWireframe: class {
