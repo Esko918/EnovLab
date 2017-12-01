@@ -1,0 +1,6 @@
+framework module Pods_EnovLabUITests {
+  umbrella header "Pods-EnovLabUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

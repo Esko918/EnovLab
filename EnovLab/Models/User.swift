@@ -32,4 +32,8 @@ class User {
         self.age = age
         self.description = description
     }
+    
+    func fullname() -> String{
+        return self.firstName + " " + self.lastName
+    }
 }

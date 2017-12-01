@@ -9,7 +9,7 @@
 import UIKit
 import AlamofireImage
 
-class UserListTableviewCellTableViewCell: UITableViewCell {
+class UserListTableviewCell: UITableViewCell {
 
     var name:UILabel!
     var jobTitle:UILabel!
@@ -18,8 +18,6 @@ class UserListTableviewCellTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.backgroundColor = UIColor.black
         
         self.name = UILabel(frame: .zero)
@@ -35,10 +33,12 @@ class UserListTableviewCellTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.jobTitle)
         
         self.avatar = UIImageView(frame: .zero)
+        self.avatar.contentMode = .scaleAspectFill
         self.avatar.translatesAutoresizingMaskIntoConstraints = false
         self.avatar.backgroundColor = self.contentView.backgroundColor
         self.contentView.addSubview(self.avatar)
         
+        self.setNeedsUpdateConstraints()
         
         
     }
@@ -65,14 +65,14 @@ class UserListTableviewCellTableViewCell: UITableViewCell {
                                                           multiplier: 1.0,
                                                           constant: 10))
         self.contentView.addConstraint(NSLayoutConstraint(item: self.avatar,
-                                                          attribute: .bottom,
-                                                          relatedBy: .equal,
-                                                          toItem: self.contentView,
-                                                          attribute: .bottom,
-                                                          multiplier: 1.0,
-                                                          constant: 10))
-        self.contentView.addConstraint(NSLayoutConstraint(item: self.avatar,
                                                           attribute: .width,
+                                                          relatedBy: .equal,
+                                                          toItem: nil,
+                                                          attribute: .notAnAttribute,
+                                                          multiplier: 1.0,
+                                                          constant: 50))
+        self.contentView.addConstraint(NSLayoutConstraint(item: self.avatar,
+                                                          attribute: .height,
                                                           relatedBy: .equal,
                                                           toItem: nil,
                                                           attribute: .notAnAttribute,

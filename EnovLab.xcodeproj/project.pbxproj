@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6991AE24127CB0BA001273AA /* Pods_EnovLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972FFBC7CB6BA62D138F214 /* Pods_EnovLab.framework */; };
+		B8F591AFDAC159236A12B23E /* Pods_EnovLabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3196E8357949346AE022496F /* Pods_EnovLabTests.framework */; };
 		BD840C931FCF716D005CFCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C921FCF716D005CFCCE /* AppDelegate.swift */; };
 		BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840C941FCF716D005CFCCE /* UserListViewController.swift */; };
 		BD840C9A1FCF716D005CFCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD840C991FCF716D005CFCCE /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		BD840CE61FCF79E5005CFCCE /* UserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE51FCF79E5005CFCCE /* UserContract.swift */; };
 		BD840CE91FCF7A1B005CFCCE /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CE81FCF7A1B005CFCCE /* RootContract.swift */; };
 		BD840CEB1FCF7A25005CFCCE /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */; };
+		BDBD20B91FD15D0100FEE8B6 /* UserListTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBD20B81FD15D0100FEE8B6 /* UserListTableviewCell.swift */; };
+		FC8C3793ADF6CB02CC783B9E /* Pods_EnovLabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D051866A368E131BAB3C602 /* Pods_EnovLabUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27E9D36B6D73CB942712CB4C /* Pods-EnovLabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLabTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLabTests/Pods-EnovLabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3196E8357949346AE022496F /* Pods_EnovLabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnovLabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6972FFBC7CB6BA62D138F214 /* Pods_EnovLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnovLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C9900E48ACB0DCDD3C9914 /* Pods-EnovLabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLabUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLabUITests/Pods-EnovLabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D051866A368E131BAB3C602 /* Pods_EnovLabUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnovLabUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		993058A9E3329392B0437BCE /* Pods-EnovLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLabTests/Pods-EnovLabTests.release.xcconfig"; sourceTree = "<group>"; };
+		B08541F8DE07A13C744E6394 /* Pods-EnovLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLab.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLab/Pods-EnovLab.release.xcconfig"; sourceTree = "<group>"; };
 		BD840C8F1FCF716D005CFCCE /* EnovLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnovLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD840C921FCF716D005CFCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD840C941FCF716D005CFCCE /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +76,9 @@
 		BD840CE51FCF79E5005CFCCE /* UserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContract.swift; sourceTree = "<group>"; };
 		BD840CE81FCF7A1B005CFCCE /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		BD840CEA1FCF7A25005CFCCE /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		BDBD20B81FD15D0100FEE8B6 /* UserListTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableviewCell.swift; sourceTree = "<group>"; };
+		DECA4325835E7EBC1F937207 /* Pods-EnovLabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLabUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLabUITests/Pods-EnovLabUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E740CC5A5F34C89EB22A28FE /* Pods-EnovLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnovLab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnovLab/Pods-EnovLab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6991AE24127CB0BA001273AA /* Pods_EnovLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F591AFDAC159236A12B23E /* Pods_EnovLabTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,17 +102,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8C3793ADF6CB02CC783B9E /* Pods_EnovLabUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CF81294EC8796484C322034 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E740CC5A5F34C89EB22A28FE /* Pods-EnovLab.debug.xcconfig */,
+				B08541F8DE07A13C744E6394 /* Pods-EnovLab.release.xcconfig */,
+				27E9D36B6D73CB942712CB4C /* Pods-EnovLabTests.debug.xcconfig */,
+				993058A9E3329392B0437BCE /* Pods-EnovLabTests.release.xcconfig */,
+				69C9900E48ACB0DCDD3C9914 /* Pods-EnovLabUITests.debug.xcconfig */,
+				DECA4325835E7EBC1F937207 /* Pods-EnovLabUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3838A8DDD1BB363366DEC210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6972FFBC7CB6BA62D138F214 /* Pods_EnovLab.framework */,
+				3196E8357949346AE022496F /* Pods_EnovLabTests.framework */,
+				7D051866A368E131BAB3C602 /* Pods_EnovLabUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD840C861FCF716D005CFCCE = {
 			isa = PBXGroup;
 			children = (
 				BD840C911FCF716D005CFCCE /* EnovLab */,
 				BD840C901FCF716D005CFCCE /* Products */,
+				2CF81294EC8796484C322034 /* Pods */,
+				3838A8DDD1BB363366DEC210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				BD840C941FCF716D005CFCCE /* UserListViewController.swift */,
+				BDBD20B81FD15D0100FEE8B6 /* UserListTableviewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD840CB71FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLab" */;
 			buildPhases = (
+				4BF5C2773644BC381E85097F /* [CP] Check Pods Manifest.lock */,
 				BD840C8B1FCF716D005CFCCE /* Sources */,
 				BD840C8C1FCF716D005CFCCE /* Frameworks */,
 				BD840C8D1FCF716D005CFCCE /* Resources */,
+				20EDEA14916D79B3FE132576 /* [CP] Embed Pods Frameworks */,
+				97034A02FA3CEFD3CC23FAB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD840CBA1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabTests" */;
 			buildPhases = (
+				BC92D859FF79BD10ED831221 /* [CP] Check Pods Manifest.lock */,
 				BD840C9F1FCF716D005CFCCE /* Sources */,
 				BD840CA01FCF716D005CFCCE /* Frameworks */,
 				BD840CA11FCF716D005CFCCE /* Resources */,
+				5B5A20D97D4121C750D89BA9 /* [CP] Embed Pods Frameworks */,
+				0495E9BF59543082C1D6F142 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,9 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD840CBD1FCF716E005CFCCE /* Build configuration list for PBXNativeTarget "EnovLabUITests" */;
 			buildPhases = (
+				13F6D76E83979ECA98D66C47 /* [CP] Check Pods Manifest.lock */,
 				BD840CAA1FCF716E005CFCCE /* Sources */,
 				BD840CAB1FCF716E005CFCCE /* Frameworks */,
 				BD840CAC1FCF716E005CFCCE /* Resources */,
+				8A49057A8E59869C8EC27C18 /* [CP] Embed Pods Frameworks */,
+				834987DEE6DB7C30B0625D11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,11 +452,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0495E9BF59543082C1D6F142 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLabTests/Pods-EnovLabTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13F6D76E83979ECA98D66C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnovLabUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20EDEA14916D79B3FE132576 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EnovLab/Pods-EnovLab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLab/Pods-EnovLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF5C2773644BC381E85097F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnovLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B5A20D97D4121C750D89BA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLabTests/Pods-EnovLabTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834987DEE6DB7C30B0625D11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLabUITests/Pods-EnovLabUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A49057A8E59869C8EC27C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLabUITests/Pods-EnovLabUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97034A02FA3CEFD3CC23FAB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnovLab/Pods-EnovLab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC92D859FF79BD10ED831221 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnovLabTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD840C8B1FCF716D005CFCCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBD20B91FD15D0100FEE8B6 /* UserListTableviewCell.swift in Sources */,
 				BD840CE91FCF7A1B005CFCCE /* RootContract.swift in Sources */,
 				BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */,
 				BD840C951FCF716D005CFCCE /* UserListViewController.swift in Sources */,
@@ -572,6 +777,7 @@
 		};
 		BD840CB81FCF716E005CFCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E740CC5A5F34C89EB22A28FE /* Pods-EnovLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +793,7 @@
 		};
 		BD840CB91FCF716E005CFCCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08541F8DE07A13C744E6394 /* Pods-EnovLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +809,7 @@
 		};
 		BD840CBB1FCF716E005CFCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E9D36B6D73CB942712CB4C /* Pods-EnovLabTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -619,6 +827,7 @@
 		};
 		BD840CBC1FCF716E005CFCCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993058A9E3329392B0437BCE /* Pods-EnovLabTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +845,7 @@
 		};
 		BD840CBE1FCF716E005CFCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C9900E48ACB0DCDD3C9914 /* Pods-EnovLabUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -652,6 +862,7 @@
 		};
 		BD840CBF1FCF716E005CFCCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECA4325835E7EBC1F937207 /* Pods-EnovLabUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

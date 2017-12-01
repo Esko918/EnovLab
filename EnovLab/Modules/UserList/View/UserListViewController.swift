@@ -11,24 +11,23 @@ import UIKit
 class UserListViewController: UIViewController {
 
     var presenter:UserListPresentation!
-    var users:[User]!// I know data is not supposed to be in the view but the standard for using a tableview in a viper design pattern is to have the data in both the presenter and view controller and have them match
-    
-    var tableview:UITableView!
+    private var users:[User]!//With VIPER Your suppsoed to have the data
+    private var tableview:UITableView!
+    private let cellIdentifier = "UserListCellReuseIdentifier"
     
     // MARK: Override Methods
     override func loadView() {
         
-        self.title = "User List"
-        
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.black
         
-        tableview = UITableView(frame: .zero)
-        tableview.translatesAutoresizingMaskIntoConstraints = false
-        tableview.delegate = self
-        tableview.dataSource = self
-        view.addSubview(tableview)
+        self.title = "User List"
+        self.tableview = UITableView(frame: .zero, style: .plain)
+        self.tableview.translatesAutoresizingMaskIntoConstraints = false
+        self.tableview.delegate = self
+        self.tableview.dataSource = self
+        self.tableview.register(UserListTableviewCell.self, forCellReuseIdentifier: self.cellIdentifier)
+        view.addSubview(self.tableview)
+        
         self.view = view
     
     }
@@ -113,16 +112,32 @@ extension UserListViewController:UITableViewDelegate{
         presenter.userSelected(atIndex: indexPath.row)
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier) as? UserListTableviewCell
+        
+        let user = self.users[indexPath.row]
+        cell?.name.text = user.fullname()
+        cell?.jobTitle.text = user.jobTitle
+        cell?.imageView?.af_setImage(withURL: URL(string: user.avatarUrl)!)
+        return cell!
+        
+    }
+    
 }
 
 extension UserListViewController:UITableViewDataSource{
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.users.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell.init()
-    }
-    
-    
+   
 }
