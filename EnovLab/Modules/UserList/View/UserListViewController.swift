@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class UserListViewController: UIViewController {
 
@@ -111,19 +112,6 @@ extension UserListViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.userSelected(atIndex: indexPath.row)
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier) as? UserListTableviewCell
-        
-        let user = self.users[indexPath.row]
-        cell?.name.text = user.fullname()
-        cell?.jobTitle.text = user.jobTitle
-        cell?.imageView?.af_setImage(withURL: URL(string: user.avatarUrl)!)
-        return cell!
-        
-    }
-    
 }
 
 extension UserListViewController:UITableViewDataSource{
@@ -139,5 +127,16 @@ extension UserListViewController:UITableViewDataSource{
         return self.users.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier) as? UserListTableviewCell
+        
+        let user = self.users[indexPath.row]
+        cell?.name.text = user.fullname()
+        cell?.jobTitle.text = user.jobTitle
+        cell?.imageView?.af_setImage(withURL: URL(string: user.avatarUrl)!)
+        return cell!
+        
+    }
    
 }

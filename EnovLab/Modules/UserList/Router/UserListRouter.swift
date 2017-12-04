@@ -29,14 +29,15 @@ class UserListRouter: UserListWireframe {
         router.viewController = view
         
         let navigationController = UINavigationController(rootViewController: view)
-        
         return navigationController
         
     }
     
     func presentDetails(forUser user: User) {
         
+        let detailsView = UserRouter.assembleModule(withUser: user)
+        viewController?.navigationController?.pushViewController(detailsView, animated: true)
+        
     }
-    
 
 }

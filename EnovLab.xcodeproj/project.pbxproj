@@ -17,7 +17,6 @@
 		BD840CC91FCF7826005CFCCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CC81FCF7826005CFCCE /* User.swift */; };
 		BD840CD61FCF793B005CFCCE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD51FCF793B005CFCCE /* UserViewController.swift */; };
 		BD840CD81FCF7951005CFCCE /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD71FCF7951005CFCCE /* UserRouter.swift */; };
-		BD840CDA1FCF7986005CFCCE /* UserInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CD91FCF7986005CFCCE /* UserInteracter.swift */; };
 		BD840CDC1FCF7991005CFCCE /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */; };
 		BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */; };
 		BD840CE01FCF79BE005CFCCE /* UserListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */; };
@@ -67,7 +66,6 @@
 		BD840CC81FCF7826005CFCCE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD840CD51FCF793B005CFCCE /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		BD840CD71FCF7951005CFCCE /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
-		BD840CD91FCF7986005CFCCE /* UserInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteracter.swift; sourceTree = "<group>"; };
 		BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		BD840CDD1FCF79A5005CFCCE /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
 		BD840CDF1FCF79BE005CFCCE /* UserListInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteracter.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				BD840CD41FCF78F4005CFCCE /* Contract */,
 				BD840CCD1FCF7877005CFCCE /* View */,
 				BD840CCC1FCF786E005CFCCE /* Router */,
-				BD840CCB1FCF7867005CFCCE /* Interactor */,
 				BD840CCA1FCF7860005CFCCE /* Presenter */,
 			);
 			path = User;
@@ -230,14 +227,6 @@
 				BD840CDB1FCF7991005CFCCE /* UserPresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		BD840CCB1FCF7867005CFCCE /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				BD840CD91FCF7986005CFCCE /* UserInteracter.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		BD840CCC1FCF786E005CFCCE /* Router */ = {
@@ -620,7 +609,6 @@
 				BD840CC91FCF7826005CFCCE /* User.swift in Sources */,
 				BD840CDE1FCF79A5005CFCCE /* UserListPresenter.swift in Sources */,
 				BD840CD81FCF7951005CFCCE /* UserRouter.swift in Sources */,
-				BD840CDA1FCF7986005CFCCE /* UserInteracter.swift in Sources */,
 				BD840CE41FCF79D8005CFCCE /* UserListContract.swift in Sources */,
 				BD840CE61FCF79E5005CFCCE /* UserContract.swift in Sources */,
 				BD840CE21FCF79CA005CFCCE /* UserListRouter.swift in Sources */,

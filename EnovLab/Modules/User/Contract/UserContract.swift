@@ -9,13 +9,17 @@
 import UIKit
 
 protocol UserView: class {
+    
+    var presenter:UserPresentation! { get set }
     func presentUser(user:User)
+    
 }
 
 protocol UserPresentation: class {
     
     weak var view:UserView? { get set }
     var user:User! { get set }
+    func viewDidLoad()
     
 }
 protocol UserWireframe: class{

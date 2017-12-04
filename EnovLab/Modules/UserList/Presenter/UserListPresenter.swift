@@ -18,6 +18,11 @@ class UserListPresenter: UserListPresentation {
             if(users.count > 0){
                 view?.presentUserListData(users: users)
             }
+            else{
+                
+                view?.displayDataNotFound()
+                
+            }
         }
     }
     
@@ -27,10 +32,8 @@ class UserListPresenter: UserListPresentation {
     }
     
     func userSelected(atIndex index: Int) {
-        
+        router.presentDetails(forUser: self.users[index])
     }
-    
-
 }
 
 // MARK: User List Interacter Output

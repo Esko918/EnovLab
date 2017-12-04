@@ -8,6 +8,13 @@
 
 import UIKit
 
-class UserPresenter: NSObject {
+class UserPresenter: UserPresentation {
 
+    var view: UserView?
+    var user: User!
+    
+    func viewDidLoad() {
+        view?.presentUser(user: self.user)
+    }
+    
 }

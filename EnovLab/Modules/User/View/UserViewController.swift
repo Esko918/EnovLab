@@ -7,29 +7,66 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class UserViewController: UIViewController {
-
+    
+    var presenter:UserPresentation!
+    private var scrollView = UIScrollView()
+    private var nameLbl = UILabel()
+    private var emailLbl = UILabel()
+    private var genderLbl = UILabel()
+    private var avatarImageView = UIImageView()
+    private var jobTitleLbl = UILabel()
+    private var ageLbl = UILabel()
+    private var descriptionLbl = UILabel()
+    
+    override func loadView() {
+        
+        let view = UIView()
+        self.scrollView = UIScrollView()
+        self.scrollView.backgroundColor = UIColor.green
+        self.scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.nameLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.emailLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.genderLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.jobTitleLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.ageLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.avatarImageView.translatesAutoresizingMaskIntoConstraints = false
+        self.descriptionLbl.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        view.addSubview(self.scrollView)
+        self.view = view
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter?.viewDidLoad()
+        self.view.setNeedsUpdateConstraints()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func updateViewConstraints() {
+        
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[scrollView]-0-|",
+                                                                options:NSLayoutFormatOptions(rawValue: 0),
+                                                                metrics: nil,
+                                                                views: ["scrollView":scrollView]))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[scrollView]-0-|",
+                                                                    options:NSLayoutFormatOptions(rawValue: 0),
+                                                                    metrics: nil,
+                                                                    views: ["scrollView":scrollView]))
+        
+        
+        
+        super.updateViewConstraints()
     }
+}
+
+extension UserViewController:UserView{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func presentUser(user: User) {
+        
     }
-    */
-
 }

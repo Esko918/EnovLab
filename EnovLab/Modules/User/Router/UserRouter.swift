@@ -8,6 +8,21 @@
 
 import UIKit
 
-class UserRouter: NSObject {
+class UserRouter: UserWireframe {
+    
+    var viewController: UIViewController?
+    static func assembleModule(withUser user: User) -> UIViewController {
+        
+        let view = UserViewController()
+        let presenter = UserPresenter()
+        presenter.user = user
+        
+        view.presenter = presenter
+        presenter.view = view
+        
+        return view
+        
+    }
+    
 
 }
