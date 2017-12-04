@@ -111,6 +111,7 @@ extension UserListViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.userSelected(atIndex: indexPath.row)
+        tableView .deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -134,7 +135,8 @@ extension UserListViewController:UITableViewDataSource{
         let user = self.users[indexPath.row]
         cell?.name.text = user.fullname()
         cell?.jobTitle.text = user.jobTitle
-        cell?.imageView?.af_setImage(withURL: URL(string: user.avatarUrl)!)
+        cell?.imageView?.af_setImage(withURL: URL(string:user.avatarUrl)!)
+        
         return cell!
         
     }

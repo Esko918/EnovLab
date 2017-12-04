@@ -32,10 +32,10 @@ class UserListTableviewCell: UITableViewCell {
         self.contentView.addSubview(self.jobTitle)
         
         self.avatar = UIImageView(frame: .zero)
-        self.avatar.contentMode = .scaleAspectFill
         self.avatar.translatesAutoresizingMaskIntoConstraints = false
         self.avatar.backgroundColor = self.contentView.backgroundColor
         self.contentView.addSubview(self.avatar)
+        
         
         self.setNeedsUpdateConstraints()
         
