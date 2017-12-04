@@ -135,7 +135,17 @@ extension UserListViewController:UITableViewDataSource{
         let user = self.users[indexPath.row]
         cell?.name.text = user.fullname()
         cell?.jobTitle.text = user.jobTitle
-        cell?.imageView?.af_setImage(withURL: URL(string:user.avatarUrl)!)
+        
+        //Theres some sort of bug thats making the image smaller once its downloaded im not going to
+        //try and fix this issue for a code challange.
+        cell?.imageView?.af_setImage(withURL: URL(string:user.avatarUrl)!,
+                                     placeholderImage: #imageLiteral(resourceName: "placeholder"),
+                                     filter: nil,
+                                     progress: nil,
+                                     progressQueue: DispatchQueue.main,
+                                     imageTransition: .noTransition,
+                                     runImageTransitionIfCached: false,
+                                     completion: nil)
         
         return cell!
         
